@@ -6,11 +6,10 @@ const NavBar = (props)=>{
 
     const show = ()=>{
         setShowMenu(!showMenu);
-        console.log('Clicked')
     }
     return (
         <nav>
-            <div className={showMenu ? "navBar" : "navBar-show"}>
+            <div className={showMenu ?"navBar-show":"navBar"}>
             <ul className="navUnordered">
                 <li className="navHome">Home</li>
                 <li className="">About</li>
