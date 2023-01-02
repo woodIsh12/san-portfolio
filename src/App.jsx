@@ -4,7 +4,7 @@ import NavBar from './components/Navbar'
 import Intro from './components/Intro'
 import Footer from './components/Fotter'
 import Portfolio from './components/Portfolio'
-import Timeline from './components/Timeline'
+import Skills from './components/Skills'
 import Contact from './components/Contact'
 
 
@@ -15,7 +15,7 @@ function App() {
       <NavBar/>
       <Intro/>
       <Portfolio/>
-      <Timeline/>
+      <Skills/>
       <Contact/>
       <Footer/>
     </div>
