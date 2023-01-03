@@ -156,12 +156,14 @@ nav{
 }
 
 .my-info h1{
-    font-size: 2rem;
-    text-align: center;
+    font-size: 3.5rem;
+    text-align: left;
+    color: #3282B8;
 }
 .my-info p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: justify;
+    color: #d3d3d3;
 }
 .greyMe{
     border-radius: 49%;
@@ -180,5 +182,61 @@ nav{
     }
     .greyMe{
         scale: .8;
+    }
+}
+
+.skills{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.skills h1{
+    font-size: 3rem;
+    text-align: left;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #f4dede;
+    padding: 1rem;
+}
+
+.column{
+    background-color: #d9eefc;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: left;
+
+}
+
+.column p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.progressBar{
+    height: 1rem;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    background-color: #fff7f7;
+}
+
+.percentageBar{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+    border-radius: 10px;
+    width: 80%;
+    height: 1rem;
+}
+
+@media(max-width:700px){
+    .skills-container{
+        grid-template-columns: auto;
     }
 }

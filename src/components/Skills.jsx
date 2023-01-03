@@ -4,18 +4,45 @@ const Skills = (props)=>{
     return (
         <>
         <section className="skills">
-            <div className="skillBar">
-                <p>React.JS</p>
-                <div style={{height:"24px",width:"25%"}}></div>
-                <p>MongoDB</p>
-                <div style={{height:"24px",width:"25%"}}></div>
-                <p>Express.JS</p>
-                <div style={{height:"24px",width:"25%"}}></div>
-                <p>JAVA</p>
-                <div style={{height:"24px",width:"25%"}}></div>
-                <p>C++</p>
-                <div style={{height:"24px",width:"25%"}}></div>
+            <h1>Skill Set</h1>
+            <div className="skills-container">
+                <div className="column">
+                    <p>React.js</p>
+                    <div className="progressBar">
+                    <div className="percentageBar"></div>
+                    </div>
+                </div>
 
+                <div className="column">
+                    <p>Express.js</p>
+                    <div className="progressBar">
+                    <div className="percentageBar"></div>
+                    </div>
+                </div>
+                <div className="column">
+                    <p>MongoDB</p>
+                    <div className="progressBar">
+                    <div className="percentageBar"></div>
+                    </div>
+                </div>
+                <div className="column">
+                    <p>HTML/CSS</p>
+                    <div className="progressBar">
+                    <div className="percentageBar"></div>
+                    </div>
+                </div>
+                <div className="column">
+                    <p>Java</p>
+                    <div className="progressBar">
+                    <div className="percentageBar"></div>
+                    </div>
+                </div>
+                <div className="column">
+                    <p>C++</p>
+                    <div className="progressBar">
+                    <div className="percentageBar"></div>
+                    </div>
+                </div>
             </div>
         </section>
         </>
