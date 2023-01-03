@@ -1,4 +1,5 @@
 import React from "react";
+import reactLogo from "../icons/science.png";
 
 const Skills = (props)=>{
     return (
@@ -7,14 +8,21 @@ const Skills = (props)=>{
             <h1>Skill Set</h1>
             <div className="skills-container">
                 <div className="column">
+                    <div className="logo-name">
+                    <img src={reactLogo} className="programmingLogo" />
                     <p>React.js</p>
+                    </div>
                     <div className="progressBar">
                     <div className="percentageBar"></div>
                     </div>
                 </div>
 
                 <div className="column">
-                    <p>Express.js</p>
+                    
+                <div className="logo-name">
+                    <img src={reactLogo} className="programmingLogo" />
+                    <p>express.js</p>
+                    </div>
                     <div className="progressBar">
                     <div className="percentageBar"></div>
                     </div>
