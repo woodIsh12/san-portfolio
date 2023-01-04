@@ -190,7 +190,7 @@ nav{
     margin: auto;
     text-align: center;
     margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     max-width: 70rem;
 }
 
@@ -204,6 +204,7 @@ nav{
     display: grid;
     grid-template-columns: auto auto;
     padding: 1rem;
+    margin-bottom: 3rem;
 }
 
 .column{
@@ -256,6 +257,28 @@ nav{
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+.otherSkills{
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.otherSkills .column{
+    padding: 0;
+    margin-top: -2rem;
+}
+
+.otherSkills ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
 
 @media(max-width:700px){
     .skills{

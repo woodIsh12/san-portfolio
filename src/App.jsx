@@ -6,6 +6,9 @@ import Footer from './components/Fotter'
 import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 function App() {
