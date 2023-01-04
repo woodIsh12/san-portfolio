@@ -1,16 +1,18 @@
+import { process_params } from "express/lib/router";
 import reactLogo from "../icons/science.png";
 
 
-const Skillbar = ()=>{
+const Skillbar = (props)=>{
     return (
         <>
         <div className="column">
             <div className="logo-name">
-                <img src={reactLogo} className="programmingLogo" />
-                <p>React.js</p>
+                <h3>{props.skill.name}</h3>
+                <p className="percentageNum">{props.skill.percentage}%</p>
+                <img src={props.skill.logo} className="programmingLogo" />
             </div>
             <div className="progressBar">
-                <div className="percentageBar"></div>
+                <div className="percentageBar" style={{width: `${props.skill.percentage}%`}}></div>
             </div>
             </div>
         </>
