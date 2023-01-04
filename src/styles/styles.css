@@ -262,20 +262,22 @@ nav{
     text-align: left;
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 1.5rem;
+    margin-left: -2rem;
+    margin-top: 3.5rem;
     padding: 1.5rem;
     border-radius: 20px;
+    max-width: 70rem;
 }
 
 .otherSkills .column{
     padding: 0;
-    margin-top: -2rem;
+    margin-top: -1.6rem;
 }
 
 .otherSkills ul li{
     list-style: none;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 520;
 }
 
 
@@ -296,5 +298,9 @@ nav{
     }
     .skills-container{
         grid-template-columns: auto;
+    }
+    .otherSkills{
+        grid-template-columns: auto;
+        margin-left: 0rem;
     }
 }

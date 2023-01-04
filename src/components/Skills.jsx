@@ -20,7 +20,15 @@ const Skills = (props)=>{
         {logo:mongo, percentage:75, name: "MongoDB", ani:1},
         {logo:node, percentage: 80, name:"Express/Node.js", ani:2}]
 
-    let others = ["MySQL", "Bash", "Git", "GitHub", "Python", "Bootstrap"]
+    let others = [{name:"MySQL", ani:1},
+     {name:"Bash", ani:2}, 
+     {name:"Git", ani:1},
+     {name:"GitHub", ani:2},
+      {name:"Python", ani:1},
+       {name:"Bootstrap", ani:2},
+       {name:"Object Oriented", ani:1},
+       {name:"Algorithms", ani:2}]
+
         useEffect(() => {
             AOS.init();
           }, [])
@@ -34,9 +42,9 @@ const Skills = (props)=>{
             </div>
             <h1>Others . . .</h1> 
             <div className="otherSkills">
-                {others.map(other=><div className="column">
+                {others.map(other=><div data-aos-mirror='true' data-aos-duration='500' className="column" data-aos={(other.ani == 2) ? "fade-left":"fade-right"}>
                     <ul>
-                        <li>{other}</li>
+                        <li>{other.name}</li>
                     </ul>
                 </div>)}
             </div>
