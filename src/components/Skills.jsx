@@ -36,11 +36,11 @@ const Skills = (props)=>{
     return (
         <>
         <section className="skills">
-            <h1>Skill Set</h1>
+            <h2>Skill Set</h2>
             <div className="skills-container">
                 {arr.map(skill => <Skillbar skill={skill}/>)}
             </div>
-            <h1>Others . . .</h1> 
+            <h2>Others . . .</h2> 
             <div className="otherSkills">
                 {others.map(other=><div className="column" data-aos={(other.ani == 2) ? "fade-left":"fade-right"}>
                     <ul>
