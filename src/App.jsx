@@ -3,7 +3,7 @@ import React from 'react'
 import NavBar from './components/Navbar'
 import Intro from './components/Intro'
 import Footer from './components/Fotter'
-import Portfolio from './components/Portfolio'
+import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import AOS from 'aos';
@@ -17,8 +17,8 @@ function App() {
     <div className="App">
       <NavBar/>
       <Intro/>
-      <Portfolio/>
       <Skills/>
+      <Projects/>
       <Contact/>
       <Footer/>
     </div>
