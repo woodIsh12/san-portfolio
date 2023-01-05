@@ -47,7 +47,7 @@ nav{
     content: '';
     width: 0%;
     height: 2px;
-    background-color: #2f69b4;
+    background-color: #ff3333;
     display: block;
     margin: auto;
     transition: .35s;
@@ -163,7 +163,7 @@ nav{
 .my-info h1{
     font-size: 3.5rem;
     text-align: left;
-    color: #3282B8;
+    color: rgb(255, 254, 254);
 }
 .my-info p{
     font-size: 1.3rem;
@@ -178,19 +178,22 @@ nav{
 
 .my-info button{
     padding: 1rem;
+    width: 13rem;
+    height: 4rem;
     background-color: #00000000;
     color: #ebf5ff;
     border-radius: 15px;
-    border: 1px solid white;
+    border: none;
     font-weight: 600;
     font-size: 1.3rem;
-    transition: .8s;
+    transition: .5s;
     align-items: center;
+    background-color: #ff3333;
 }
 
 .my-info button:hover{
-    color: #3282B8;
-    background-color: #ececec;
+    color: #ffeeee;
+    font-size: 1.6rem;
 }
 
 @media(max-width:700px){
@@ -205,19 +208,28 @@ nav{
     .greyMe{
         scale: .8;
     }
-
+    .my-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .my-info h1{
-        font-size: 3rem;
+        font-size: 4rem;
+        text-align: center;
     }
     .my-info p{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .my-info button{
-        font-size: 1rem;
-        float: right;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        
     }
 
-
+    .imageMe{
+        display: none;
+    }
 }
 
 .skills{
@@ -317,6 +329,7 @@ h2{
     font-weight: 600;
     margin-left: 4rem;
     text-align: left;
+    color: #FF4A4A;
 }
 
 @media(max-width:700px){
@@ -361,21 +374,36 @@ h2{
 }
 .project-col{
     flex-basis:31%;
-    background: #ebf5ff;
+    background: #ffffff;
     border-radius: 10px;
     margin-bottom: 5%;
     margin-top: 2rem;
     padding: 1.25rem 0.75rem;
     box-sizing: border-box;
+    text-align: left;
     transition: .5s;
 }
 
 .project-col:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    background: #ff9999;
 }
 
 @media(max-width:700px){
     .row{
         flex-direction: column;
     }
+}
+
+.fotter{
+    background-color: #ffe4e4;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.fotter h4{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }

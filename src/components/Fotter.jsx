@@ -2,7 +2,11 @@ import React from "react";
 
 const Footer = (props)=>{
     return (
-        <div></div>
+        <section className="fotter">
+            <div className="socialMedia"></div>
+            <p>Made By Santiago Londono</p>
+
+        </section>
     )
 };
 
