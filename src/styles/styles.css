@@ -458,6 +458,17 @@ h2{
     background-position: center center;
 }
 
+.weather{
+    background-image: url(../icons/resizedLoc.png);
+    background-size: cover;
+    background-position: center center;
+}
+.monteCarlo{
+    background-image: url(../icons/monteCarlo.png);
+    background-size: cover;
+    background-position: center center;
+}
+
 .shareThou{
     background-image: url(../icons/shareThou800.png);
     background-size: cover;
@@ -496,8 +507,8 @@ h2{
 .fotter{
     width: 100%;
     text-align: center;
-    padding: 2rem 0;
-    margin-top: 7rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
     color:#ffffff;
 }
 
@@ -529,23 +540,23 @@ h2{
 
 .about h2{
     color: white;
+    margin-top: -2rem;
 }
 .about{
     width: 100%;
     margin: auto;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-image: linear-gradient(to top, #f43b47 0%, #453a94 80%)*/
-    background-image: linear-gradient(to top, #000d3e 20%,#009f9f 100%);
+    background-image: linear-gradient(to top, #000d3e 40%, rgb(62, 206, 204) 100%);
+    /*background-image: linear-gradient(to top, #000d3e 20%,rgb(206, 62, 62) 50%,#00d2d2 100%, white 100%);*/
     
 }
 
 .pdfViewer{
     width: 55rem;
-    height: 50rem;
+    height: 65rem;
 }
 
 @media(max-width:700px){

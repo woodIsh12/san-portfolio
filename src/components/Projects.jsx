@@ -29,15 +29,15 @@ const Projects = (props)=>{
 
             </div>
             <div className="row">
-            <div className="project-col movier">
+            <div className="project-col weather">
                 <div className="layer">
-                    <h3>Movier</h3>
+                    <h3>Weather</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
                 </div>
             </div>
-            <div className="project-col shareThou">
+            <div className="project-col monteCarlo">
                 <div className="layer">
-                    <h3>PhilThoughts</h3>
+                    <h3>MonteCarlo</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
                 </div>
             </div>
