@@ -42,7 +42,7 @@ const Skills = (props)=>{
             </div>
             <h2>Others . . .</h2> 
             <div className="otherSkills">
-                {others.map(other=><div className="column" data-aos={(other.ani == 2) ? "fade-left":"fade-right"}>
+                {others.map(other=><div className="column"   data-aos={(other.ani == 2) ? "fade-left":"fade-right"}>
                     <ul>
                         <li>{other.name}</li>
                     </ul>

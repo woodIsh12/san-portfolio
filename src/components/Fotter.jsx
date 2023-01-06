@@ -1,11 +1,17 @@
 import React from "react";
+import linkIcon from "../icons/in.png"
+import gitIcon from "../icons/github.png"
+import mail from "../icons/mail.png"
+
 
 const Footer = (props)=>{
     return (
         <section className="fotter">
             <div className="socialMedia"></div>
-            <p>Made By Santiago Londono</p>
-
+            <p>Desgined & Built by Santiago Londono</p>
+            <img src={linkIcon} className="icon" />
+            <img src={mail} className="icon" />
+            <img src={gitIcon} className="github-icon icon" />
         </section>
     )
 };

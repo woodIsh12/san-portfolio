@@ -497,10 +497,47 @@ h2{
     text-align: center;
     padding: 2rem 0;
     margin-top: 7rem;
-    height: 15rem;
+    color:#ffffff;
 }
 
-.fotter h4{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+.fotter p{
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.fotter p:hover{
+    scale: 110%;
+}
+.icon{
+    margin: .6rem;
+    height: 2rem;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.about h2{
+    color: white;
+}
+.about{
+    width: 100%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    background-image: linear-gradient(to top, #006f9f 0%, #330867 100%);
+}
+
+.react-pdf__Page__textContent{
+    display: none;
+
+}
+
+.react-pdf__Page__annotations{
+    display: none;
 }
