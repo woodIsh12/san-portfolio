@@ -10,7 +10,7 @@ const Footer = (props)=>{
             <div className="socialMedia"></div>
             <p>Desgined & Built by Santiago Londono</p>
             <img src={linkIcon} className="icon" />
-            <img src={mail} className="icon" />
+            <img src={mail} className="icon mail" />
             <img src={gitIcon} className="github-icon icon" />
         </section>
     )

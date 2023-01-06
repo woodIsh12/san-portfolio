@@ -515,7 +515,16 @@ h2{
     margin: .6rem;
     height: 2rem;
     cursor: pointer;
+    filter: drop-shadow(16px 16px 20px red) invert(0);
+}
+
+.github-icon{
+    filter: drop-shadow(16px 16px 18px rgb(255, 247, 0)) invert(0);
+}
+.mail{
     filter: invert(100%);
+    filter: drop-shadow(16px 16px 20px red) invert(105%);
+    height: 2.5rem;
 }
 
 .about h2{
