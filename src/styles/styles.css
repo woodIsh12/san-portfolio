@@ -371,6 +371,7 @@ h2{
     max-width: 80rem;
     margin: auto;
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .row{
@@ -528,16 +529,21 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-
-    background-image: linear-gradient(to top, #006f9f 0%, #330867 100%);
+    /*background-image: linear-gradient(to top, #f43b47 0%, #453a94 80%)*/
+    background-image: linear-gradient(to top, #000d3e 20%,#009f9f 100%);
+    
 }
 
-.react-pdf__Page__textContent{
-    display: none;
-
+.pdfViewer{
+    width: 55rem;
+    height: 50rem;
 }
 
-.react-pdf__Page__annotations{
-    display: none;
+@media(max-width:700px){
+    
+    .pdfViewer{
+        width: 40%;
+        width: 380px;
+        height: 27rem;
+    }
 }
