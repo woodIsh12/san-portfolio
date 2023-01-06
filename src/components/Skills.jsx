@@ -14,11 +14,11 @@ import { useEffect } from "react";
 const Skills = (props)=>{
 
     let arr = [{logo: reactLogo, percentage: 85, name:"React.js", ani:1},
-        {logo: cpp, percentage: 65, name:"C++", ani:2},
+        {logo:node, percentage: 80, name:"Express/Node.js", ani:2},
         {logo:htmlCss, percentage: 80, name: "HTML/CSS", ani:1},
-        {logo:java, percentage: 65, name: "Java", ani:2},
-        {logo:mongo, percentage:75, name: "MongoDB", ani:1},
-        {logo:node, percentage: 80, name:"Express/Node.js", ani:2}]
+        {logo:mongo, percentage:75, name: "MongoDB", ani:2},
+        {logo:java, percentage: 65, name: "Java", ani:1},
+        {logo: cpp, percentage: 65, name:"C++", ani:2},]
 
     let others = [{name:"MySQL", ani:1},
      {name:"Bash", ani:2}, 
@@ -35,7 +35,7 @@ const Skills = (props)=>{
         
     return (
         <>
-        <section className="skills">
+        <section className="skills" id="skills">
             <h2>Skill Set</h2>
             <div className="skills-container">
                 {arr.map(skill => <Skillbar skill={skill}/>)}

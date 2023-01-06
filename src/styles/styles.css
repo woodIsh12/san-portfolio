@@ -329,7 +329,7 @@ h2{
     font-weight: 600;
     margin-left: 4rem;
     text-align: left;
-    color: #FF4A4A;
+    color: #0d0074;
 }
 
 @media(max-width:700px){
@@ -370,7 +370,7 @@ h2{
 .row{
     margin-top:5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .project-col{
     flex-basis:31%;
@@ -381,26 +381,116 @@ h2{
     padding: 1.25rem 0.75rem;
     box-sizing: border-box;
     text-align: left;
+    position: relative;
+    overflow: hidden;
     transition: .5s;
+    height: 20rem;
+    max-height: 31%;
 }
 
-.project-col:hover{
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    background: #ff9999;
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    color: white;
+}
+
+.layer h3, .layer p{
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+    margin: 1rem;
+    max-width: 90%;
+    overflow: scroll;
+}
+
+.layer h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.layer p{
+    font-size: 1rem;
+    top: 0;
+    color: rgb(225, 225, 225);
+}
+
+.layer:hover{
+    background-color: #0e0074b7;
+}
+
+
+.layer:hover h3{
+    bottom: 65%;
+    opacity: 1;
+}
+
+.layer:hover p{
+    opacity: 1;
+    top: 35%;
+}
+
+.layer h3:hover{
+    color: #ff3333;
+}
+
+
+.movier{
+    background-image: url(../icons/movier400.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.shareThou{
+    background-image: url(../icons/shareThou800.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+@media(max-width:820px){
+    .projects-container{
+        width: 90%;
+    }
 }
 
 @media(max-width:700px){
     .row{
         flex-direction: column;
     }
+    .project-col{
+        flex-basis: 19rem;
+    }
+    .layer{
+    background-color: #0e0074b7;
+    }
+    .layer h3, .layer p{
+        opacity: 1;
+    }
+    .layer h3{
+        bottom: 65%;
+    }
+    .layer p{
+        top: 35%;
+    }
 }
 
 .fotter{
-    background-color: #ffe4e4;
+    background-color: #190f63;
     width: 100%;
     text-align: center;
     padding: 2rem 0;
-    margin-top: 3rem;
+    margin-top: 7rem;
+    height: 15rem;
 }
 
 .fotter h4{
