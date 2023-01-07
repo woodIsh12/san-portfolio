@@ -17,7 +17,7 @@ const ProjectsCard = (props)=>{
     return(
         <div className="project-col" style={{backgroundImage: `url(${props.info.image})`}}>
         <div onClick={changeStyle} className={onProject ? "layer" : "layerPurple"} >
-            <h3>Movier</h3>
+            <h3>{props.info.name}</h3>
             <p>Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Quaerat saepe laudantium
                 aperiam neque dolores alias provident quisquam
