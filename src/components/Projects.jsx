@@ -1,4 +1,30 @@
 import React from "react";
+import movierIMG from "../icons/movier400.png"
+import shareIMG from "../icons/shareThou800.png"
+import carloIMG from "../icons/monteCarlo.png"
+import weatherIMG from "../icons/resizedLoc.png"
+import portfolioIMG from "../icons/portfolioIMG.png"
+import ProjectsCard from "./ProjectsCard";
+
+let projectsInfo = [
+    {name:"Movier", 
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!",
+    image: movierIMG},
+    {name:"shareThou",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!",
+    image:shareIMG},
+    {name:"MonteCarlo",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!",
+    image: carloIMG},
+    {name:"Weather App",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!",
+    image:weatherIMG},
+    {name:"This Portfolio",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!",
+    image:portfolioIMG}
+
+];
+
 
 const Projects = (props)=>{
     return (
@@ -8,46 +34,8 @@ const Projects = (props)=>{
         </div>
         <section className="projects-container">
             <div className="row">
-            <div className="project-col movier">
-                <div className="layer">
-                    <h3>Movier</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
-                </div>
-            </div>
-            <div className="project-col shareThou">
-                <div className="layer">
-                    <h3>PhilThoughts</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
-                </div>
-            </div>
-            <div className="project-col">
-                <div className="layer">
-                    <h3>My portfolio</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
-                    </div>
-            </div>
-
-            </div>
-            <div className="row">
-            <div className="project-col weather">
-                <div className="layer">
-                    <h3>Weather</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
-                </div>
-            </div>
-            <div className="project-col monteCarlo">
-                <div className="layer">
-                    <h3>MonteCarlo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
-                </div>
-            </div>
-            <div className="project-col">
-                <div className="layer">
-                    <h3>My portfolio</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat saepe laudantium aperiam neque dolores alias provident quisquam natus, optio aliquam!</p>
-                    </div>
-            </div>
-
+            {projectsInfo.map(project=>
+            <ProjectsCard info={project} />)}
             </div>
         </section>
         </>
