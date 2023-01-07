@@ -397,7 +397,7 @@ h2{
     background-position: center center;
 }
 
-.layer{
+.layer, .layerPurple{
     background: transparent;
     height: 20rem;
     width: 100%;
@@ -408,7 +408,7 @@ h2{
     color: white;
 }
 
-.layer h3, .layer p{
+.layer h3, .layer p, .layerPurple p, .layerPurple h3{
     width: 100%;
     bottom: 0;
     left: 50%;
@@ -421,35 +421,35 @@ h2{
     overflow: scroll;
 }
 
-.layer h3{
+.layer h3, .layerPurple h3{
     font-size: 1.6rem;
     font-weight: 700;
     color: #ffffff;
     cursor: pointer;
 }
 
-.layer p{
+.layer p, .layerPurple p{
     font-size: 1rem;
     top: 0;
     color: rgb(225, 225, 225);
 }
 
-.layer:hover{
+.layer:hover, .layerPurple:hover{
     background-color: #0e0074b7;
 }
 
 
-.layer:hover h3{
+.layer:hover h3,.layerPurple:hover h3{
     bottom: 65%;
     opacity: 1;
 }
 
-.layer:hover p{
+.layer:hover p, .layerPurple:hover p{
     opacity: 1;
     top: 35%;
 }
 
-.layer h3:hover{
+.layer h3:hover, .layerPurple h3:hover{
     color: #ff3333;
 }
 .projectsTItle{
@@ -465,17 +465,24 @@ h2{
     .row{
         grid-template-columns: auto;
     }
-    .layer{
+    .layerPurple{
     background-color: #0e0074b7;
+        
     }
-    .layer h3, .layer p{
+    .layerPurple h3{
+        bottom: 65%;
         opacity: 1;
     }
-    .layer h3{
-        bottom: 65%;
-    }
-    .layer p{
+    
+    .layerPurple p{
+        opacity: 1;
         top: 35%;
+    }
+}
+
+@media(hover:hover) and (pointer:fine){
+    .layer:hover{
+        background-color: #0e0074b7;
     }
 }
 
