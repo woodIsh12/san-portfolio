@@ -20,7 +20,7 @@ function App() {
 
   const scrollToSection = (elementRef)=>{
       window.scrollTo({top:elementRef.current.offsetTop,
-      behaviour: 'smooth'})
+      behavior: 'smooth'})
   }
 
   return (

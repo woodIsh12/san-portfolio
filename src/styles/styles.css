@@ -43,6 +43,8 @@ nav{
     transition: .1s;   
 }
 
+.navBar-show{
+}
 .navBar-show ul li{
     display: block;
 }

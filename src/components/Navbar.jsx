@@ -12,7 +12,7 @@ const NavBar = (props)=>{
             <div className={showMenu ?"navBar-show":"navBar"}>
             <ul className="navUnordered">
                 <li onClick={() => props.scrollToSection(props.home)} className="navHome">Home</li>
-                <li onClick={() => props.scrollToSection(props.skills)} className="">skills</li>
+                <li onClick={() => props.scrollToSection(props.skills)} className="">Skills</li>
                 <li onClick={() => props.scrollToSection(props.projects)} className="">Pojects</li>
                 <li onClick={() => props.scrollToSection(props.resume)} className="">Resume</li>
             </ul>
