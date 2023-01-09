@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import greyMe from "../icons/whiteBlackMe.jpg"
 
 const Intro = (props)=>{
     return (
         <>
-        <section className="intro">
+        <section ref={props.home} className="intro">
             <div className="container-intro">
                 <div className="my-info">
                     <h1>Santiago Londono</h1>

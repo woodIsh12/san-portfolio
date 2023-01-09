@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import movierIMG from "../icons/movier400.png"
 import shareIMG from "../icons/shareThou800.png"
 import carloIMG from "../icons/monteCarlo.png"
@@ -27,9 +27,10 @@ let projectsInfo = [
 
 
 const Projects = (props)=>{
+    const services = useRef(null);
     return (
         <>
-        <div className="skills">
+        <div ref={props.projects}  className="skills">
             <h2>Projects</h2>
         </div>
         <section className="projects-container">

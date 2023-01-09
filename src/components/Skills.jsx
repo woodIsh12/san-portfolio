@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import reactLogo from "../icons/science.png";
 import cpp from "../icons/c-.png";
 import java from "../icons/java.png";
@@ -9,6 +9,7 @@ import Skillbar from "./skillBar";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+
 
 
 const Skills = (props)=>{
@@ -35,7 +36,7 @@ const Skills = (props)=>{
         
     return (
         <>
-        <section className="skills" id="skills">
+        <section ref={props.skills} className="skills" id="skills">
             <h2>Skill Set</h2>
             <div className="skills-container">
                 {arr.map(skill => <Skillbar skill={skill}/>)}

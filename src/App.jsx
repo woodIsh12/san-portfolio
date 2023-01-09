@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import React from 'react'
 import NavBar from './components/Navbar'
 import Intro from './components/Intro'
@@ -13,13 +13,23 @@ import 'aos/dist/aos.css';
 
 function App() {
 
+  const resume = useRef(null);
+  const skills = useRef(null);
+  const home = useRef(null);
+  const projects = useRef(null);
+
+  const scrollToSection = (elementRef)=>{
+      window.scrollTo({top:elementRef.current.offsetTop,
+      behaviour: 'smooth'})
+  }
+
   return (
     <div className="App">
-      <NavBar/>
-      <Intro/>
-      <Skills/>
-      <Projects/>
-      <About/>
+      <NavBar scrollToSection={scrollToSection} skills={skills} home={home} projects={projects} resume={resume}/>
+      <Intro home={home}/>
+      <Skills skills={skills}/>
+      <Projects projects={projects}/>
+      <About resume={resume}/>
     </div>
   )
 }

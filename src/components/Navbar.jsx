@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import menu from "../icons/menu.png"
 
 const NavBar = (props)=>{
     const [showMenu, setShowMenu] = useState(false);
-
     const show = ()=>{
         setShowMenu(!showMenu);
     }
+
     return (
         <nav>
             <div className={showMenu ?"navBar-show":"navBar"}>
             <ul className="navUnordered">
-                <li className="navHome">Home</li>
-                <li className="">About</li>
-                <li className="">Pojects</li>
-                <li className="">Contact</li>
+                <li onClick={() => props.scrollToSection(props.home)} className="navHome">Home</li>
+                <li onClick={() => props.scrollToSection(props.skills)} className="">skills</li>
+                <li onClick={() => props.scrollToSection(props.projects)} className="">Pojects</li>
+                <li onClick={() => props.scrollToSection(props.resume)} className="">Resume</li>
             </ul>
             </div>
             <img onClick={show} className="nav-menu" src={menu}/>
