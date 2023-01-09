@@ -94,10 +94,11 @@ nav{
 
     .nav-menu{
         display: block;
-        filter: invert(100%);
+        box-shadow: rgb(255, 255, 255);
+        filter: drop-shadow(6px 6px 20px rgb(255, 0, 0)) invert(65%);
         height: 3rem;
         width: 3rem;
-        position: absolute;
+        position: fixed;
         right: 0;
         margin-right: 20px;
         z-index: 2;
@@ -121,7 +122,7 @@ nav{
         transition: .5s;
     }
     .navBar-show{
-        position: absolute;
+        position: fixed;
         background-color: #000000f2;
         height: calc(100vh);
         width: 200px;
@@ -228,11 +229,11 @@ nav{
         align-items: center;
     }
     .my-info h1{
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
     }
     .my-info p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .my-info button{
         font-size: 1.6rem;
@@ -416,7 +417,7 @@ h2{
     color: white;
 }
 
-.layer h3, .layer p, .layerPurple p, .layerPurple h3{
+.layer h3, .layer p, .layerPurple h3, .layerPurple p{
     width: 100%;
     bottom: 0;
     left: 50%;
@@ -442,22 +443,22 @@ h2{
     color: rgb(225, 225, 225);
 }
 
-.layer:hover, .layerPurple:hover{
+.layer:hover{
     background-color: #0e0074b7;
 }
 
 
-.layer:hover h3,.layerPurple:hover h3{
+.layer:hover h3{
     bottom: 65%;
     opacity: 1;
 }
 
-.layer:hover p, .layerPurple:hover p{
+.layer:hover p{
     opacity: 1;
     top: 35%;
 }
 
-.layer h3:hover, .layerPurple h3:hover{
+.layer h3:hover{
     color: #ff3333;
 }
 .projectsTItle{
@@ -480,17 +481,13 @@ h2{
     .layerPurple h3{
         bottom: 65%;
         opacity: 1;
+        color: #ebf5ff;
     }
     
     .layerPurple p{
         opacity: 1;
         top: 35%;
-    }
-}
-
-@media(hover:hover) and (pointer:fine){
-    .layer:hover{
-        background-color: #0e0074b7;
+        color: #ebf5ff;
     }
 }
 
@@ -539,9 +536,9 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-image: linear-gradient(to top, #000d3e 40%, rgb(62, 206, 204) 100%);*/
-    background-image: linear-gradient(to top, #000d3e 20%,rgb(210, 17, 17) 45%,#00c2c2 100%, white 100%);
-    
+    background-image: linear-gradient(to top, #000d3e 40%, rgb(62, 206, 204) 100%);
+    /*background-image: linear-gradient(to top, #000d3e 20%,rgb(210, 17, 17) 45%,#00c2c2 100%, white 100%);
+    */
 }
 
 .pdfViewer{

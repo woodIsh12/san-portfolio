@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 
 
@@ -7,16 +7,13 @@ const ProjectsCard = (props)=>{
 
     const [onProject, setOnProject] = useState(true);
 
-    const styleOnClick = {
-        backgroundColor: "#0e0074b7",
-    }
-
     const changeStyle = ()=>{
+
         setOnProject(!onProject);
     }
     return(
-        <div className="project-col" style={{backgroundImage: `url(${props.info.image})`}}>
-        <div onClick={changeStyle} className={onProject ? "layer" : "layerPurple"} >
+        <div onTouchEnd={changeStyle} className="project-col" style={{backgroundImage: `url(${props.info.image})`}}>
+        <div onTouchStart={changeStyle} className={onProject ? "layer" : "layerPurple"} >
             <h3>{props.info.name}</h3>
             <p>Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Quaerat saepe laudantium

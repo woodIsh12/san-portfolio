@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Document, Page } from 'react-pdf/dist/esm/entry.vite';
 import resume from "../icons/programming.pdf"
 import Footer from "./Fotter";
 
