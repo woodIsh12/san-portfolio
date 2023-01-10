@@ -11,10 +11,10 @@ import AOS from 'aos';
 
 let projectsInfo = [
     {name:"Movier", 
-    description:"Front-end website that uses the OMDB API to retrieve different movies, it gives the user the option to make reviews any movie. It also has a built-in save movies you want to watch in the future. ",
+    description:"Front-end website that uses the OMDB API to retrieve different movies, it gives the user the option to make reviews of any movie. It also has a built-in feature to save movies you want to watch in the future. ",
     image: movierIMG},
     {name:"shareThou",
-    description:"Full stack application that use the MERN stack. It works as a blog, you can make posts once you're registered. And other users can view and react to yours posts.",
+    description:"Full stack application that use the MERN stack. It works as a blog, you can make posts once you've registered. Other users can view and react to yours posts.",
     image:shareIMG},
     {name:"MonteCarlo",
     description:"Visual representation of how PI is calculated using the monte carlo technique. This consists of dropping a random number of dots on a square that has a inscribed circle. The ratio between the dots in the square and the circle is pi.  ",
