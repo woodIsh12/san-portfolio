@@ -25,8 +25,8 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar scrollToSection={scrollToSection} skills={skills} home={home} projects={projects} resume={resume}/>
-      <Intro home={home}/>
+      <NavBar scrollToSection={scrollToSection}  skills={skills} home={home} projects={projects} resume={resume}/>
+      <Intro />
       <Skills skills={skills}/>
       <Projects projects={projects}/>
       <About resume={resume}/>

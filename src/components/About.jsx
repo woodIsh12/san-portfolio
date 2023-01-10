@@ -14,7 +14,7 @@ const About = (props)=>{
   
     return (
         <>
-      <div data-aos-duration="600" data-aos="fade-up" ref={props.resume} className="about">
+      <div ref={props.home} data-aos-duration="600" data-aos="fade-up" ref={props.resume} className="about">
         <div className="skills">
             <h2>Resume</h2>
         </div>
