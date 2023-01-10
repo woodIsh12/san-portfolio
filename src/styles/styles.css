@@ -210,8 +210,13 @@ nav{
 .my-info button:hover{
     color: #ffeeee;
     font-size: 1.6rem;
+    cursor: pointer;
 }
 
+.my-info a{
+    all: unset;
+    
+}
 @media(max-width:700px){
     .container-intro{
         display: flex;

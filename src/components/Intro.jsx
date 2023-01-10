@@ -22,7 +22,7 @@ const Intro = (props)=>{
                         Currently I'm focused on perfecting my express.js and React.js 
                         knowledge, and would like to learn Three.js {"( WebGL seems like so much fun.)"}
                     </p>
-                    <button>Contact Me</button>
+                    <button><a href="mailto:slondono.2007@hotmail.com">Contact Me</a></button>
                 </div>
                 <div data-aos-duration="1000" data-aos="fade-left" className="imageMe">
                     <img className="greyMe" src={greyMe}/>
