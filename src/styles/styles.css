@@ -402,7 +402,7 @@ h2{
     border-radius: 10px;
     margin-bottom: 5%;
     margin-top: 2rem;
-    padding: 1.25rem 0.75rem;
+    padding: 1rem 0.75rem;
     box-sizing: border-box;
     text-align: left;
     position: relative;
@@ -414,6 +414,7 @@ h2{
 }
 
 .layer, .layerPurple{
+    text-align: justify;
     background: transparent;
     height: 20rem;
     width: 100%;
@@ -425,9 +426,9 @@ h2{
 }
 
 .layer h3, .layer p, .layerPurple h3, .layerPurple p{
-    width: 100%;
+    width: 82%;
     bottom: 0;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     position: absolute;
     transition: .5s;
