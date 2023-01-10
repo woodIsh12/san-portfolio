@@ -1,12 +1,21 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import greyMe from "../icons/whiteBlackMe.jpg"
+import AOS from 'aos';
+
+
+
 
 const Intro = (props)=>{
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
     return (
         <>
         <section ref={props.home} className="intro">
             <div className="container-intro">
-                <div className="my-info">
+                <div data-aos="fade-right" className="my-info">
                     <h1>Santiago Londono</h1>
                     <p>I'm a Software Developer
                         who specializes on writing full-stack applications.
@@ -15,7 +24,7 @@ const Intro = (props)=>{
                     </p>
                     <button>Contact Me</button>
                 </div>
-                <div className="imageMe">
+                <div data-aos-duration="1000" data-aos="fade-left" className="imageMe">
                     <img className="greyMe" src={greyMe}/>
                 </div>
             </div>
