@@ -8,8 +8,8 @@ const NavBar = (props)=>{
     }
 
     return (
-        <nav>
-            <div ref={props.home} className={showMenu ?"navBar-show":"navBar"}>
+        <nav ref={props.home}> 
+            <div className={showMenu ?"navBar-show":"navBar"}>
             <ul className="navUnordered">
                 <li onClick={() => props.scrollToSection(props.home)} className="navHome">Home</li>
                 <li onClick={() => props.scrollToSection(props.skills)} className="">Skills</li>
