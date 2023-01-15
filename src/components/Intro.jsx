@@ -16,11 +16,11 @@ const Intro = (props)=>{
         <section ref={props.home} className="intro">
             <div className="container-intro">
                 <div data-aos="fade-right" className="my-info">
-                    <h1>Santiago Londono</h1>
+                    <h1>I'm Santiago Londono</h1>
                     <p>I'm a Software Developer
                         who specializes on writing full-stack applications.
-                        Currently I'm focused on perfecting my express.js and React.js 
-                        knowledge, and would like to learn Three.js {"( WebGL seems like so much fun.)"}
+                        Currently I'm focused on coding with express.js and React. 
+                        I would like to learn Three.js {"( WebGL seems like so much fun.)"}
                     </p>
                     <button><a href="mailto:slondono.2007@hotmail.com">Contact Me</a></button>
                 </div>

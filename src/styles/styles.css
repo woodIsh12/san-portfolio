@@ -157,7 +157,7 @@ nav{
     justify-content: center;
     margin: auto;
     width: 100%;
-    height: calc(100vh - 5.2rem);
+    min-height: calc(100vh - 5.2rem);
     background-image: linear-gradient(rgb(6, 17, 28),rgba(4, 9, 30, 0)), url(../icons/background.jpg);
     background-size: cover;
     background-position: center center;
@@ -251,6 +251,17 @@ nav{
     .imageMe{
         display: none;
     }
+}
+
+@media only screen and  (max-height: 575.98px) and (orientation: landscape) {
+        .imageMe{
+            display: none;
+            }  
+        .my-info button{
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            }       
 }
 
 .skills{
