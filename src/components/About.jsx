@@ -32,7 +32,7 @@ const About = (props)=>{
           <br/>
           <br/>
           I love the puzzle that software development offers. Not only this,
-          but I'm also excited expand my knowledge by working with like-minded people
+          but I'm also excited to expand my knowledge by working with like-minded people
           with more experience.
           <br/>
           <br/>
