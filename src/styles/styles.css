@@ -545,6 +545,7 @@ h2{
 .about h2{
     color: white;
     margin-top: -2rem;
+    margin-bottom: 0rem;
 }
 .about{
     width: 100%;
@@ -558,16 +559,25 @@ h2{
     */
 }
 
-.pdfViewer{
-    width: 55rem;
-    height: 65rem;
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media(max-width:700px){
-    
-    .pdfViewer{
-        width: 40%;
-        width: 380px;
-        height: 27rem;
-    }
+.aboutParagraph{
+    color: #efefef;
+    width: 80%;
+    border-radius: 20px;
+    max-width: 50rem;
+    font-size: 1.2rem;
+    padding: 0rem 3rem 2rem 3rem;
+    background-color: #090909d6;
+}
+
+.bulb{
+    position: relative;
+    left: -3rem;
+    top: 3rem;
+    font-size: 2.5rem;
 }

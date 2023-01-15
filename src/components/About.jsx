@@ -19,22 +19,34 @@ const About = (props)=>{
             <h2>About Me</h2>
         </div>
         <div className="content">
-          <p style={{color: "white"}}>I'm Santiago, a Langara College student.
+          <p className="aboutParagraph">
+            
+        <span className="bulb">💡</span>
+
           <br/>
-          During my college years I gained the skills needed to help design, develop, test and maintain
-          Software. Ranging from beautiful front-end websites, to a ful-stack application, working with 
-          several moving parts {"( microservices, API's)"}.
+          I'm Santiago, a Langara College student.
+          <br/>
+          During my college years I gained the skills needed to design, develop, deploy and maintain
+          Software, ranging from beautiful front-end websites, to full-stack applications, working with 
+          several moving parts {"(microservices, API's)"}.
+          <br/>
           <br/>
           I love the puzzle that software development offers. Not only this,
           but I'm also excited expand my knowledge by working with like-minded people
           with more experience.
           <br/>
+          <br/>
           On a personal level I'd say I'm a someone who is very interested in the world.
           what it has to offer, and how other people perceive it. I enjoy
-            philosophy, learning languages, and being outdoors. </p>
-        <a href={resume} download>
+            philosophy, learning languages, and being outdoors.
+          <br/>
+          <br/>
+          <br/>
+        <a className="resumeDownload" href={resume} download>
           <button>Download resume</button>
         </a>        
+            
+             </p>
         </div>
         <Footer/>
         </div>
